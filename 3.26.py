@@ -30,12 +30,6 @@ if __name__ == "__main__":
     # Lấy lịch sử cập nhật qua các bước
     (x_hist, total_its) = myGD1(x0, eta)
 
-    print("=== CHI TIẾT 4 BƯỚC ĐẦU TIÊN ===")
-    for t in range(min(5, len(x_hist))):
-        x_t = x_hist[t]
-        c_t = cost(x_t)
-        g_t = grad(x_t)
-        print(f"Bước {t}: x_{t} = {x_t:.4f} | f(x_{t}) = {c_t:.6f} | f'(x_{t}) = {g_t:.4f}")
 
     print("\n=== KẾT QUẢ HỘI TỤ CHUNG ===")
     print('Solution x = %f, cost = %f, after %d iterations'
