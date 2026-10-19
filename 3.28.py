@@ -61,10 +61,7 @@ def main():
         # Câu 3: tính lại w^T x
         z_new = np.dot(w_new, x)
         print("Câu 3: w_new^T x = 0*2 + 4*3 + 1*1 =", z_new)
-        print("       nhãn dự đoán mới = %+d -> %s"
-              % (predict(w_new, x),
-                 "phân lớp đúng" if not is_misclassified(w_new, x, y)
-                 else "vẫn sai"))
+       
     else:
         print("\nMẫu đã được phân lớp đúng, không cần cập nhật.")
 
